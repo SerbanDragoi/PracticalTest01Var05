@@ -44,22 +44,32 @@ public class PracticalTest01Var05MainActivity extends AppCompatActivity {
 
 
         button_center.setOnClickListener(view -> {
+            if(!edit_text.getText().toString().isEmpty())
+                edit_text.setText(edit_text.getText().toString() + ",");
             no_clicks++;
             edit_text.setText(edit_text.getText().toString() + "Center");
         });
         button_top_left.setOnClickListener(view -> {
+            if(!edit_text.getText().toString().isEmpty())
+                edit_text.setText(edit_text.getText().toString() + ",");
             no_clicks++;
             edit_text.setText(edit_text.getText().toString() + "Top Left");
         });
         button_top_right.setOnClickListener(view -> {
+            if(!edit_text.getText().toString().isEmpty())
+                edit_text.setText(edit_text.getText().toString() + ",");
             no_clicks++;
             edit_text.setText(edit_text.getText().toString() + "Top Right");
         });
         button_bottom_left.setOnClickListener(view -> {
+            if(!edit_text.getText().toString().isEmpty())
+                edit_text.setText(edit_text.getText().toString() + ",");
             no_clicks++;
             edit_text.setText(edit_text.getText().toString() + "Bottom Left");
         });
         button_bottom_right.setOnClickListener(view -> {
+            if(!edit_text.getText().toString().isEmpty())
+                edit_text.setText(edit_text.getText().toString() + ",");
             no_clicks++;
             edit_text.setText(edit_text.getText().toString() + "Bottom Right");
         });
